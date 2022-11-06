@@ -1,2 +1,4 @@
 \babel@toc {slovene}{}
-\contentsline {section}{\tocsection {}{1}{Uvod}}{3}%
+\contentsline {section}{\tocsection {}{1}{Opis problema}}{3}%
+\contentsline {subsection}{\tocsubsection {}{1.1}{Osnovni problem}}{3}%
+\contentsline {subsection}{\tocsubsection {}{1.2}{Nadgradnja problema}}{3}%

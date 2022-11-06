@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.5)  5 NOV 2022 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.5)  6 NOV 2022 11:38
 entering extended mode
-**c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/opis.tex
-(c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/opis.tex
+**c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Opis/opis.tex
+(c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Opis/opis.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18> (C:\Users\petja\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsart.cls
 Document Class: amsart 2020/05/29 v2.20.6
@@ -143,7 +143,7 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count190
 \l__pdf_internal_box=\box48
-) (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\opis.aux)
+) (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Opis\opis.aux)
 \openout1 = `opis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -180,26 +180,40 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \MPnumerator=\count195
 \makeMPintoPDFobject=\count196
 \everyMPtoPDFconversion=\toks29
-) [1{C:/Users/petja/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\opis.toc)
+) [1{C:/Users/petja/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Opis\opis.toc)
 \tf@toc=\write3
 \openout3 = `opis.toc'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2] [3] (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\opis.aux) ) 
+ [2]
+Overfull \hbox (21.71826pt too wide) in paragraph at lines 97--102
+ \OT1/cmr/m/n/14.4 1.2.\OT1/cmr/bx/n/14.4 Nadgradnja pro-blema.[] \OT1/cmr/m/n/14.4 V na-de-lje-va-nju bova pro-blem tudi resevala|
+ []
+
+
+Overfull \hbox (25.26463pt too wide) in paragraph at lines 97--102
+\OT1/cmr/m/n/14.4 lahko ena tocka v rav-nini(velikem kva-dratu) po-krita z dvema/tremi/stirimi|
+ []
+
+[3] (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Opis\opis.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 66 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 3467 strings out of 480790
- 45974 string characters out of 2897301
- 295678 words of memory out of 3000000
- 19312 multiletter control sequences out of 15000+200000
- 535540 words of font info for 37 fonts, out of 3000000 for 9000
+ 3475 strings out of 480790
+ 46139 string characters out of 2897301
+ 295717 words of memory out of 3000000
+ 19319 multiletter control sequences out of 15000+200000
+ 536787 words of font info for 42 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 38i,5n,33p,343b,184s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\opis.pdf (3 pages, 45971 bytes).
+ 38i,5n,33p,348b,279s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Opis\opis.pdf (3 pages, 59591 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
+ 32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
