@@ -1,16 +1,17 @@
 ## Core latex/pdflatex auxiliary files:
-opis/
-.aux
-.lof
-.log
-.lot
-.fls
-.out
-.toc
-.fmt
-.fot
-.cb
-.cb2
-
+#opis/
+#.aux
+#.lof
+#.log
+#.lot
+#.fls
+#.out
+#.toc
+#.fmt
+#.fot
+#.cb
+#.cb2
+#.fdb_latexmk
+#.synctex.gz
 
 
