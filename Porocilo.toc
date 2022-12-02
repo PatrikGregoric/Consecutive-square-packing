@@ -5,4 +5,5 @@
 \contentsline {section}{\numberline {2}Reševanje osnovnega problema}{4}{}%
 \contentsline {subsection}{\numberline {2.1}Kratek opis}{4}{}%
 \contentsline {subsection}{\numberline {2.2}Potek reševanja}{4}{}%
-\contentsline {subsection}{\numberline {2.3}Nadgradnja problema}{6}{}%
+\contentsline {section}{\numberline {3}Nadgradnja problema}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Opis nadgradnje}{6}{}%
