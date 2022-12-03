@@ -213,8 +213,41 @@ $1$ do $n$ in vsako $l$-krat. To lahko bralec naredi sam brez večjih težav in 
 stvar deluje.
 SLIKA TODO
 \subsection{Potek reševanja, ko je vsaka točka v prostoru lahko pokrita $k$-krat}
+Podatki, ki jih v tem primeru dobimo je število $k$,  ki pove kolikokrat je 
+lahko ena točka v prostoru pokrita in urejen seznam dolžin stranic.
+Za ta primer sva definirala naslednjo funkcijo, ki izračuna željen razultat:
 
+\begin{verbatim}
+    def packing_ktimes(kvadrati,k): #kvadrati je seznam cifer, tale dela če so cifre urejene in vsako točko lahko pokrijemo k-krat
+    p = MixedIntegerLinearProgram(maximization=False,solver='GLPK')
+    x = p.new_variable()
+    y = p.new_variable()
+    zg_meja = sum(kvadrati) + 1
+    a = p.new_variable(binary = True) #kvadrat i ni levo od j
+    b = p.new_variable(binary = True) #kvadrat j ni desno od j
+    L = p.new_variable(binary = True)
+    p.set_objective(p['z'])
+    p.add_constraint((p['z']) >= (max(kvadrati)))
+    for i, d in enumerate(kvadrati): # i je indeks, d je dolžina stranice
+        p.add_constraint(x[i] >= 0)  # želimo nenegativne koordinate
+        p.add_constraint(y[i] >= 0)
+        p.add_constraint(x[i] + d <= p['z']) # omejimo p['z'] z največjo pokrito koordinato
+        p.add_constraint(y[i] + d <= p['z'])
+        for j , g in enumerate(kvadrati):
+            p.add_constraint(x[i] + d <= x[j] + zg_meja * a[i,j])
+            p.add_constraint(x[j] + g <= x[i] + zg_meja * a[j,i])
+            p.add_constraint(y[i] + d <= y[j] + zg_meja * b[i,j])
+            p.add_constraint(y[j] + g <= y[i] + zg_meja * b[j,i])
+    for i, j in Combinations(range(len(kvadrati)), 2):
+        p.add_constraint(a[i, j] + a[j, i] + b[i, j] + b[j, i] <= 3 + L[i,j])
+    for C in Combinations(range(len(kvadrati)), (k+1)):
+        p.add_constraint(sum(sum(L[C[i],C[j]] for j in range(i+1,k+1)) for i in range(k +1 )) <= comb((k+1),2)-1)
+    z = p.solve()
+    xx = p.get_values(x)
+    yy = p.get_values(y)
+    return (z, [(xx[i], yy[i], d) for i, d in enumerate(kvadrati)]) 
+\end{verbatim}
 
-
+SLIKE TODO
 
 \end{document}

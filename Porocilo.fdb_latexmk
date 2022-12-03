@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670109143 "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.tex" "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.pdf" "Porocilo" 1670109145
+["pdflatex"] 1670109605 "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.tex" "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.pdf" "Porocilo" 1670109608
   "C:/Users/petja/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1670108449 28976 323c703d16a0255b30a6c3cd9f79ac93 ""
   "C:/Users/petja/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1669984469 31952 e8d085f993d683c6528826781306c6d0 ""
   "C:/Users/petja/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1607531889 40136 cf5bde325b100d03e1db671c7f42c326 ""
@@ -75,17 +75,17 @@
   "C:/Users/petja/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1580644884 7308 a7fb09b68a4a07a482e876fbe2959b04 ""
   "C:/Users/petja/AppData/Local/Programs/MiKTeX/tex/latex/ulem/ulem.sty" 1578651445 15682 94f55b803e160cf7fb6e4d77d07cfe1d ""
   "C:/Users/petja/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Porocilo.aux" 1670109144 1516 f62690ba65c941e8112b8e0aff8f81a0 "pdflatex"
-  "Porocilo.tex" 1670109141 8535 ad6b6df60ed9262d645724cfa1354843 ""
-  "Porocilo.toc" 1670109144 779 505404b9f2ee502dcdc5c8d6a3782d32 "pdflatex"
-  "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.aux" 1670109144 1516 f62690ba65c941e8112b8e0aff8f81a0 ""
-  "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.tex" 1670109141 8535 ad6b6df60ed9262d645724cfa1354843 ""
+  "Porocilo.aux" 1670109607 1516 f62690ba65c941e8112b8e0aff8f81a0 "pdflatex"
+  "Porocilo.tex" 1670109605 10426 f5d32e465e7a6e2e2b39e352afe6b885 ""
+  "Porocilo.toc" 1670109607 779 505404b9f2ee502dcdc5c8d6a3782d32 "pdflatex"
+  "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.aux" 1670109607 1516 f62690ba65c941e8112b8e0aff8f81a0 ""
+  "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.tex" 1670109605 10426 f5d32e465e7a6e2e2b39e352afe6b885 ""
   "slike/Lahek_primer.png" 1670107704 6371 1b03f879b6b7efce50a21cb426bb13bb ""
   "slike/prvi.png" 1670107704 5467 0a4a2f8de75af1df83ff3893f184ebc4 ""
   (generated)
-  "Porocilo.pdf"
-  "Porocilo.log"
-  "Porocilo.toc"
-  "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.log"
   "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.pdf"
+  "c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.log"
+  "Porocilo.pdf"
+  "Porocilo.toc"
   "Porocilo.aux"
+  "Porocilo.log"
