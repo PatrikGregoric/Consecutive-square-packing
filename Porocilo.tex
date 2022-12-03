@@ -161,7 +161,7 @@ def packing(kvadrati): #kvadrati je seznam cifer
     a = p.new_variable(binary = True) #kvadrat i ni levo od j
     b = p.new_variable(binary = True) #kvadrat j ni desno od j
     p.set_objective(p['z'])
-    p.add_constraint((p['z']) >= (max(kvadrati)))
+    p.add_constraint((p['z']) >= ((max(kvadrati))+kvadrati[len(kvadrati)-2]))
     for i, d in enumerate(kvadrati): # i je indeks, d je dolžina stranice
         p.add_constraint(x[i] >= 0)  # želimo nenegativne koordinate
         p.add_constraint(y[i] >= 0)
@@ -203,6 +203,17 @@ V nadeljevanju bova problem tudi reševala v primeru,
 stranice vzamemo dva/tri/štiri \dots take kvadrate. 
 Obravnavala bova tudi primer, ko je lahko ena točka v ravnini (velikem kvadratu) pokrita z 
 dvema/tremi/štirimi \dots  kvadrati.
+\subsection{Potek reševanja, ko imamo kvadrate ne nujno zaporednih velikost}
+Dani podatki, ki jih sedaj ponudimo je seznam dolžin daljic kvadrat. V tem primeru ni 
+pomembno, koliko je katerih dolžin, važno je le, da je seznam urejen. To je tako,
+da so dolžine stranic naraščujoče.
+V tem primeru, nam funkcija packing(), na danem seznamu deluje pravilno in nam najde rešitev.
+Nisva se ubadala s pisanjem funkcije, ki bi generirala seznam , ki bi imel števila od 
+$1$ do $n$ in vsako $l$-krat. To lahko bralec naredi sam brez večjih težav in preveri, da 
+stvar deluje.
+SLIKA TODO
+\subsection{Potek reševanja, ko je vsaka točka v prostoru lahko pokrita $k$-krat}
+
 
 
 
