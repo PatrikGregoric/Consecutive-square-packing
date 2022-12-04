@@ -1,6 +1,6 @@
-PWD c:\Users\patri\OneDrive\Dokumenti\Financni Praktikum\Projekt
+PWD c:\Users\patri\OneDrive\Dokumenti\Financni Praktikum\Projekt\Consecutive-square-packing
 INPUT C:\Users\patri\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\patri\OneDrive\Dokumenti\Financni Praktikum\Projekt\Porocilo.tex
+INPUT c:\Users\patri\OneDrive\Dokumenti\Financni Praktikum\Projekt\Consecutive-square-packing\Porocilo.tex
 OUTPUT Porocilo.log
 INPUT C:\Users\patri\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\patri\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
