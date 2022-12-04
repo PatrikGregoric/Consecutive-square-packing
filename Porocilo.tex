@@ -79,6 +79,7 @@ Ljubljana, \letnica}
 
 \thispagestyle{empty}
 \tableofcontents
+\listoffigures
 \pagebreak
 
 
@@ -115,7 +116,7 @@ metode za reševanje CLP v programskem jeziku Sage.
 Za podatke imava podane kvadrate s stranicami dolžine $i$, kjer $i = 1, \dots , n$, in $ i \in \Z, n \in \N$.
 Ciljna funkcija najinega problema je iskanje $\min z$, kjer je $z$ dolžina stranice največjega kvadrata, v katerega
 se zloži vse manjše kvadrate s stranicami $i = 1, \dots , n$.\\
-Za reševanje problema sva definirala razred Kvadrat.
+Za reševanje problema sva definirala razred $Kvadrat$.
 \begin{verbatim}
 from sage.plot.polygon import polygon
 class Kvadrat:
@@ -204,17 +205,23 @@ stranice vzamemo dva/tri/štiri \dots take kvadrate.
 Obravnavala bova tudi primer, ko je lahko ena točka v ravnini (velikem kvadratu) pokrita z 
 dvema/tremi/štirimi \dots  kvadrati.
 \subsection{Potek reševanja, ko imamo kvadrate ne nujno zaporednih velikost}
-Dani podatki, ki jih sedaj ponudimo je seznam dolžin daljic kvadrat. V tem primeru ni 
+Dani podatki, ki jih sedaj ponudimo je seznam dolžin daljic kvadratov. V tem primeru ni 
 pomembno, koliko je katerih dolžin, važno je le, da je seznam urejen. To je tako,
 da so dolžine stranic naraščujoče.
-V tem primeru, nam funkcija packing(), na danem seznamu deluje pravilno in nam najde rešitev.
-Nisva se ubadala s pisanjem funkcije, ki bi generirala seznam , ki bi imel števila od 
+V tem primeru, nam funkcija $packing()$, na danem seznamu deluje pravilno in nam najde rešitev.
+Nisva se ubadala s pisanjem funkcije, ki bi generirala seznam, ki bi imel števila od 
 $1$ do $n$ in vsako $l$-krat. To lahko bralec naredi sam brez večjih težav in preveri, da 
 stvar deluje.
-SLIKA TODO
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{Vec_istih_kvadratov.png}
+    \caption{Primer za pet kvadratov dolžine $1$ in dva dolžine $2$}
+\end{figure}
+
 \subsection{Potek reševanja, ko je vsaka točka v prostoru lahko pokrita $k$-krat}
 Podatki, ki jih v tem primeru dobimo je število $k$,  ki pove kolikokrat je 
-lahko ena točka v prostoru pokrita in urejen seznam dolžin stranic.
+lahko ena točka v prostoru pokrita in urejen seznam dolžin stranic kvadratov.
 Za ta primer sva definirala naslednjo funkcijo, ki izračuna željen razultat:
 
 \begin{verbatim}
@@ -248,6 +255,25 @@ Za ta primer sva definirala naslednjo funkcijo, ki izračuna željen razultat:
     return (z, [(xx[i], yy[i], d) for i, d in enumerate(kvadrati)]) 
 \end{verbatim}
 
-SLIKE TODO
+\begin{figure}[H]
+    \centering
+    \includegraphics{Dvakratno_prekrivanje.png}
+    \caption{Primer, ko je vsaka točka lahko pokrita $2-krat$}
+\end{figure}
+
+\noindent Tak problem program reši bistveno hitreje, saj ima več možnosti za ureditev kvadratov. Večkrat,
+ko je vsaka točka lahko pokrita enostavnejši postane izračun rezultata, saj si lahko predstavljamo problem,
+da vsak kvadrat razdelimo na svoj podproblem in ga rešujemo kot osnovni problem z malo več svobode pri
+omejevanju mej.
+
+\section{Sklep}
+Problem je težek, saj ne obstaja enolična rešitev. Program ima na voljo veliko možnosti za rešitve, hkrati
+pa mora biti problem dobro zastavljen, da program dobi pravilno rešitev. Za izračun si moramo postaviti tesne
+meje, ki omejujejo dopustne rešitve za hitrost delovanja programa.\\
+V nadgradnji problema opazimo veliko hitrejše delovanje programa. Zahteve niso tako omejujoče s prekrivanjem 
+ali pa z velikostjo kvadratov. Pri večkratnem prekrivanju se problem za program zelo poenostavi, kar močno
+vpliva na hitrost.\\
+Pri zlaganju kvadratov v kvadrat opazimo veliko nepokritih točk, kar nam poda idejo, da bi bilo bolj
+učinkovito zlagati kvadrate v pravokotnik.
 
 \end{document}
