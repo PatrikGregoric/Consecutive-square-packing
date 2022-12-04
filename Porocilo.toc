@@ -9,3 +9,4 @@
 \contentsline {subsection}{\numberline {3.1}Opis nadgradnje}{6}{}%
 \contentsline {subsection}{\numberline {3.2}Potek reševanja, ko imamo kvadrate ne nujno zaporednih velikost}{6}{}%
 \contentsline {subsection}{\numberline {3.3}Potek reševanja, ko je vsaka točka v prostoru lahko pokrita $k$-krat}{7}{}%
+\contentsline {section}{\numberline {4}Sklep}{9}{}%

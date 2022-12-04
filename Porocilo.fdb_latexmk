@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670157615 "c:/Users/patri/OneDrive/Dokumenti/Financni Praktikum/Projekt/Consecutive-square-packing/Porocilo.tex" "Porocilo.pdf" "Porocilo" 1670157616
+["pdflatex"] 1670159826 "c:/Users/patri/OneDrive/Dokumenti/Financni Praktikum/Projekt/Consecutive-square-packing/Porocilo.tex" "Porocilo.pdf" "Porocilo" 1670159826
   "C:/Users/patri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1669932726 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/patri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1669931189 28976 c88139f2fd7d398cc02ea28f999d1e12 ""
   "C:/Users/patri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1669930945 31952 bb1800581ebdb1af4b24ed9e165a4d8a ""
@@ -75,14 +75,18 @@
   "C:/Users/patri/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1636710260 7392 39729ae6a807e217edf1442cf8fab2c2 ""
   "C:/Users/patri/AppData/Local/Programs/MiKTeX/tex/latex/ulem/ulem.sty" 1578651445 15682 94f55b803e160cf7fb6e4d77d07cfe1d ""
   "C:/Users/patri/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Porocilo.aux" 1670157616 1564 9e373595bdf6ce262c00ae09b9b73628 "pdflatex"
-  "Porocilo.tex" 1670157612 10426 f5d32e465e7a6e2e2b39e352afe6b885 ""
-  "Porocilo.toc" 1670157616 806 133f026d5d6cc604876c46e6dd528f5f "pdflatex"
-  "c:/Users/patri/OneDrive/Dokumenti/Financni Praktikum/Projekt/Consecutive-square-packing/Porocilo.tex" 1670157612 10426 f5d32e465e7a6e2e2b39e352afe6b885 ""
+  "Porocilo.aux" 1670159826 1968 fde0a763d4b728716d45ded84f44094a "pdflatex"
+  "Porocilo.lof" 1670159826 423 3b0e0fc72b5a49d968cbf6aeb438e492 "pdflatex"
+  "Porocilo.tex" 1670159825 11825 cec685e14fe1a26324e2339feadf3afd ""
+  "Porocilo.toc" 1670159826 858 2f959d89674e5888eb4dd84bf22af114 "pdflatex"
+  "c:/Users/patri/OneDrive/Dokumenti/Financni Praktikum/Projekt/Consecutive-square-packing/Porocilo.tex" 1670159825 11825 cec685e14fe1a26324e2339feadf3afd ""
+  "slike//Dvakratno_prekrivanje.png" 1670158040 5131 eeba06b648f7fdc7b97ccc44525758d4 ""
   "slike//Lahek_primer.png" 1669931982 6371 1b03f879b6b7efce50a21cb426bb13bb ""
+  "slike//Vec_istih_kvadratov.png" 1670157864 7290 b4879dcb3e590e756e85e2559a6c5cb4 ""
   "slike//prvi.png" 1669984594 5467 0a4a2f8de75af1df83ff3893f184ebc4 ""
   (generated)
   "Porocilo.aux"
+  "Porocilo.lof"
   "Porocilo.log"
   "Porocilo.pdf"
   "Porocilo.toc"
