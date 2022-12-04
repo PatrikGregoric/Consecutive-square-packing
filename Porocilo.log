@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.5)  4 DEC 2022 00:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.5)  4 DEC 2022 23:09
 entering extended mode
 **c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.tex
 (c:/Users/petja/OneDrive/Dokumenti/Faks/letnik_3/Consecutive-square-packing/Porocilo.tex
@@ -169,20 +169,20 @@ File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 ) (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Porocilo.aux)
 \openout1 = `Porocilo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
  (C:\Users\petja\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count192
@@ -200,11 +200,11 @@ LaTeX Font Info:    ... okay on input line 57.
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
  (C:\Users\petja\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
  (C:\Users\petja\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -213,154 +213,204 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 \openout3 = `Porocilo.toc'.
 
+ (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Porocilo.lof)
+\tf@lof=\write4
+\openout4 = `Porocilo.lof'.
+
  [2]
-<./slike/prvi.png, id=14, 277.5168pt x 281.1303pt>
+<./slike/prvi.png, id=16, 277.5168pt x 281.1303pt>
 File: ./slike/prvi.png Graphic file (type png)
 <use ./slike/prvi.png>
-Package pdftex.def Info: ./slike/prvi.png  used on input line 102.
+Package pdftex.def Info: ./slike/prvi.png  used on input line 105.
 (pdftex.def)             Requested size: 277.51611pt x 281.12961pt.
  [3 <./slike/prvi.png>]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 119.
+
+LaTeX Warning: Command \v invalid in math mode on input line 119.
+
+Missing character: There is no º in font cmr10!
+
+Overfull \hbox (7.45538pt too wide) in paragraph at lines 118--121
+\T1/cmr/m/n/10.95 imamo spre-men-ljivko $\OML/cmm/m/it/10.95 dolinadaljice$ \T1/cmr/m/n/10.95 po-znano, spre-men-ljivki $\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 koordinata; y \OMS/cmsy/m/n/10.95  
+ []
+
+[4]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 154.
  (C:\Users\petja\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (47.40271pt too wide) in paragraph at lines 130--130
+Overfull \hbox (47.40271pt too wide) in paragraph at lines 165--165
 []            \T1/cmtt/m/n/10.95 [(self.x, self.y), (self.x + self.dolzina_stranice, self.y),[] 
  []
 
 
-Overfull \hbox (81.35294pt too wide) in paragraph at lines 131--131
+Overfull \hbox (81.35294pt too wide) in paragraph at lines 166--166
 []             \T1/cmtt/m/n/10.95 (self.x + self.dolzina_stranice, self.y + self.dolzina_stranice),[] 
  []
 
-[4]
-Overfull \hbox (75.69456pt too wide) in paragraph at lines 164--164
+[5]
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 199--199
 []    \T1/cmtt/m/n/10.95 p.add_constraint((p['z']) >= ((max(kvadrati))+kvadrati[len(kvadrati)-2]))[] 
  []
 
 
-Overfull \hbox (53.06108pt too wide) in paragraph at lines 165--165
+Overfull \hbox (53.06108pt too wide) in paragraph at lines 200--200
 []    \T1/cmtt/m/n/10.95 for i, d in enumerate(kvadrati): # i je indeks, d je dolºina stranice[] 
  []
 
 
-Overfull \hbox (24.76923pt too wide) in paragraph at lines 166--166
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 201--201
 []        \T1/cmtt/m/n/10.95 p.add_constraint(x[i] >= 0)  # ºelimo nenegativne koordinate[] 
  []
 
 
-Overfull \hbox (154.91176pt too wide) in paragraph at lines 168--168
+Overfull \hbox (154.91176pt too wide) in paragraph at lines 203--203
 []        \T1/cmtt/m/n/10.95 p.add_constraint(x[i] + d <= p['z']) # omejimo p['z'] z najve£jo pokrito koordinato[] 
  []
 
 
-Overfull \hbox (7.79411pt too wide) in paragraph at lines 171--171
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 206--206
 []            \T1/cmtt/m/n/10.95 p.add_constraint(x[i] + d <= x[j] + zg_meja * a[i,j])[] 
  []
 
 
-Overfull \hbox (7.79411pt too wide) in paragraph at lines 172--172
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 207--207
 []            \T1/cmtt/m/n/10.95 p.add_constraint(x[j] + g <= x[i] + zg_meja * a[j,i])[] 
  []
 
 
-Overfull \hbox (7.79411pt too wide) in paragraph at lines 173--173
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 208--208
 []            \T1/cmtt/m/n/10.95 p.add_constraint(y[i] + d <= y[j] + zg_meja * b[i,j])[] 
  []
 
 
-Overfull \hbox (7.79411pt too wide) in paragraph at lines 174--174
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 209--209
 []            \T1/cmtt/m/n/10.95 p.add_constraint(y[j] + g <= y[i] + zg_meja * b[j,i])[] 
  []
 
 
-Overfull \hbox (24.76923pt too wide) in paragraph at lines 176--176
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 211--211
 []        \T1/cmtt/m/n/10.95 p.add_constraint(a[i, j] + a[j, i] + b[i, j] + b[j, i] <= 3)[] 
  []
 
 
-Overfull \hbox (19.11086pt too wide) in paragraph at lines 180--180
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 215--215
 []    \T1/cmtt/m/n/10.95 return (z, [(xx[i], yy[i], d) for i, d in enumerate(kvadrati)])[] 
  []
 
-<./slike/Lahek_primer.png, id=28, 283.2984pt x 281.1303pt>
+<./slike/Lahek_primer.png, id=34, 283.2984pt x 281.1303pt>
 File: ./slike/Lahek_primer.png Graphic file (type png)
 <use ./slike/Lahek_primer.png>
-Package pdftex.def Info: ./slike/Lahek_primer.png  used on input line 193.
+Package pdftex.def Info: ./slike/Lahek_primer.png  used on input line 228.
 (pdftex.def)             Requested size: 283.2977pt x 281.12961pt.
-[5] [6 <./slike/Lahek_primer.png>]
-Overfull \hbox (375.58823pt too wide) in paragraph at lines 221--221
+[6] [7 <./slike/Lahek_primer.png>]
+<./slike/Vec_istih_kvadratov.png, id=43, 289.8027pt x 281.1303pt>
+File: ./slike/Vec_istih_kvadratov.png Graphic file (type png)
+<use ./slike/Vec_istih_kvadratov.png>
+Package pdftex.def Info: ./slike/Vec_istih_kvadratov.png  used on input line 255.
+(pdftex.def)             Requested size: 289.80199pt x 281.12961pt.
+
+
+LaTeX Warning: Command \v invalid in math mode on input line 261.
+
+Missing character: There is no º in font cmr10!
+
+Overfull \hbox (12.85648pt too wide) in paragraph at lines 260--264
+\OML/cmm/m/it/10.95 kvadrati$ \T1/cmr/m/n/10.95 je se-sta-vljen iz tro-jice $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 koordinata; y \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 koordinata; dolzina[]aljice\OT1/cmr/m/n/10.95 )$\T1/cmr/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (28.02599pt too wide) in paragraph at lines 260--264
+\T1/cmr/m/n/10.95 kjer imamo spre-men-ljivko $\OML/cmm/m/it/10.95 dolinadaljice$ \T1/cmr/m/n/10.95 po-znano, spre-men-ljivki $\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 koordinata; y \OMS/cmsy/m/n/10.95  
+ []
+
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 277.
+
+
+Overfull \hbox (78.40509pt too wide) detected at line 282
+[]
+ []
+
+[8 <./slike/Vec_istih_kvadratov.png>]
+Overfull \hbox (375.58823pt too wide) in paragraph at lines 297--297
 []    \T1/cmtt/m/n/10.95 def packing_ktimes(kvadrati,k): #kvadrati je seznam cifer, tale dela £e so cifre urejene in vsako to£ko lahko pokrijemo k-krat[] 
  []
 
 
-Overfull \hbox (19.11086pt too wide) in paragraph at lines 222--222
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 298--298
 []    \T1/cmtt/m/n/10.95 p = MixedIntegerLinearProgram(maximization=False,solver='GLPK')[] 
  []
 
 
-Overfull \hbox (53.06108pt too wide) in paragraph at lines 231--231
+Overfull \hbox (53.06108pt too wide) in paragraph at lines 307--307
 []    \T1/cmtt/m/n/10.95 for i, d in enumerate(kvadrati): # i je indeks, d je dolºina stranice[] 
  []
 
 
-Overfull \hbox (24.76923pt too wide) in paragraph at lines 232--232
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 308--308
 []        \T1/cmtt/m/n/10.95 p.add_constraint(x[i] >= 0)  # ºelimo nenegativne koordinate[] 
  []
 
-
-Overfull \hbox (154.91176pt too wide) in paragraph at lines 234--234
+[9]
+Overfull \hbox (154.91176pt too wide) in paragraph at lines 310--310
 []        \T1/cmtt/m/n/10.95 p.add_constraint(x[i] + d <= p['z']) # omejimo p['z'] z najve£jo pokrito koordinato[] 
  []
 
 
-Overfull \hbox (7.79411pt too wide) in paragraph at lines 237--237
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 313--313
 []            \T1/cmtt/m/n/10.95 p.add_constraint(x[i] + d <= x[j] + zg_meja * a[i,j])[] 
  []
 
 
-Overfull \hbox (7.79411pt too wide) in paragraph at lines 238--238
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 314--314
 []            \T1/cmtt/m/n/10.95 p.add_constraint(x[j] + g <= x[i] + zg_meja * a[j,i])[] 
  []
 
 
-Overfull \hbox (7.79411pt too wide) in paragraph at lines 239--239
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 315--315
 []            \T1/cmtt/m/n/10.95 p.add_constraint(y[i] + d <= y[j] + zg_meja * b[i,j])[] 
  []
 
 
-Overfull \hbox (7.79411pt too wide) in paragraph at lines 240--240
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 316--316
 []            \T1/cmtt/m/n/10.95 p.add_constraint(y[j] + g <= y[i] + zg_meja * b[j,i])[] 
  []
 
 
-Overfull \hbox (75.69456pt too wide) in paragraph at lines 242--242
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 318--318
 []        \T1/cmtt/m/n/10.95 p.add_constraint(a[i, j] + a[j, i] + b[i, j] + b[j, i] <= 3 + L[i,j])[] 
  []
 
 
-Overfull \hbox (279.39592pt too wide) in paragraph at lines 244--244
+Overfull \hbox (279.39592pt too wide) in paragraph at lines 320--320
 []        \T1/cmtt/m/n/10.95 p.add_constraint(sum(sum(L[C[i],C[j]] for j in range(i+1,k+1)) for i in range(k +1 )) <= comb((k+1),2)-1)[] 
  []
 
 
-Overfull \hbox (19.11086pt too wide) in paragraph at lines 248--248
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 324--324
 []    \T1/cmtt/m/n/10.95 return (z, [(xx[i], yy[i], d) for i, d in enumerate(kvadrati)])[] 
  []
 
-[7] (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Porocilo.aux) ) 
+<./slike/Dvakratno_prekrivanje.png, id=54, 277.5168pt x 281.1303pt>
+File: ./slike/Dvakratno_prekrivanje.png Graphic file (type png)
+<use ./slike/Dvakratno_prekrivanje.png>
+Package pdftex.def Info: ./slike/Dvakratno_prekrivanje.png  used on input line 329.
+(pdftex.def)             Requested size: 277.51611pt x 281.12961pt.
+[10 <./slike/Dvakratno_prekrivanje.png>] [11] (c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Porocilo.aux) ) 
 Here is how much of TeX's memory you used:
- 3721 strings out of 480790
- 50268 string characters out of 2897301
- 303863 words of memory out of 3000000
- 19674 multiletter control sequences out of 15000+200000
- 543586 words of font info for 56 fonts, out of 3000000 for 9000
+ 3750 strings out of 480790
+ 50977 string characters out of 2897301
+ 306893 words of memory out of 3000000
+ 19694 multiletter control sequences out of 15000+200000
+ 545761 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,31p,295b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Porocilo.pdf (7 pages, 146120 bytes).
+ 30i,13n,31p,314b,271s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\petja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/petja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on c:/Users\petja\OneDrive\Dokumenti\Faks\letnik_3\Consecutive-square-packing\Porocilo.pdf (11 pages, 209634 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
+ 368 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

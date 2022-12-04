@@ -4,8 +4,12 @@
 \contentsline {subsection}{\numberline {1.2}Ideja za reševanje}{3}%
 \contentsline {section}{\numberline {2}Reševanje osnovnega problema}{4}%
 \contentsline {subsection}{\numberline {2.1}Kratek opis}{4}%
-\contentsline {subsection}{\numberline {2.2}Potek reševanja}{4}%
-\contentsline {section}{\numberline {3}Nadgradnja problema}{6}%
-\contentsline {subsection}{\numberline {3.1}Opis nadgradnje}{6}%
-\contentsline {subsection}{\numberline {3.2}Potek reševanja, ko imamo kvadrate ne nujno zaporednih velikost}{6}%
-\contentsline {subsection}{\numberline {3.3}Potek reševanja, ko je vsaka točka v prostoru lahko pokrita $k$-krat}{7}%
+\contentsline {subsection}{\numberline {2.2}Zapis problema kot CLP}{4}%
+\contentsline {subsection}{\numberline {2.3}Potek reševanja}{4}%
+\contentsline {section}{\numberline {3}Nadgradnja problema}{7}%
+\contentsline {subsection}{\numberline {3.1}Opis nadgradnje}{7}%
+\contentsline {subsection}{\numberline {3.2}Zapis problema kot CLP, ko imamo kvadrate ne nujno zaporednih velikost}{7}%
+\contentsline {subsection}{\numberline {3.3}Potek reševanja, ko imamo kvadrate ne nujno zaporednih velikost}{7}%
+\contentsline {subsection}{\numberline {3.4}Zapis problema kot CLP, ko je vsaka točka v prostoru lahko pokrita $k$-krat}{8}%
+\contentsline {subsection}{\numberline {3.5}Potek reševanja, ko je vsaka točka v prostoru lahko pokrita $k$-krat}{9}%
+\contentsline {section}{\numberline {4}Sklep}{11}%

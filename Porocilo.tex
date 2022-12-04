@@ -18,7 +18,9 @@
 %\theoremstyle{definition} % tekst napisan pokoncno
 %\newtheorem{definicija}{Definicija}[section]
 %\newtheorem{primer}[definicija]{Primer}
-%\newtheorem{opomba}[definicija]{Opomba}
+%\theoremstyle{remark}
+%\newtheorem*{remark}{Opomba}
+
 
 %\renewcommand\endprimer{\hfill$\diamondsuit$}
 
@@ -79,6 +81,7 @@ Ljubljana, \letnica}
 
 \thispagestyle{empty}
 \tableofcontents
+\listoffigures
 \pagebreak
 
 
@@ -111,11 +114,43 @@ veliko možnostmi na prosta mesta. Problem je enostaven, ker je veliko različni
 Za večji $n$ postane problem mnogo težji. Zato sva se odločila reševati s celoštevilskim linearnim programiranjem.
 To je: uvedla bova spremenljivke, zapisala omejitve in to poslala skozi vgrajene 
 metode za reševanje CLP v programskem jeziku Sage.
-\subsection{Potek reševanja}
+\subsection{Zapis problema kot CLP}\label{osnovni CLP}
+Za podatke imamo seznam kvadratov. Vsak kvadrat $i$ v seznamu $kvadrati$ je sestavljen
+iz trojice $(x-koordinata,y-koordinata,dolzina_daljice)$, kjer imamo spremenljivko $dolžina daljice$
+poznano, spremenljivki $x-koordinata,y-koordinata$ pa ne.
+
+ \begin{equation*}
+    \begin{array}{ll@{}ll}
+    \text{minimize}  & z &\\
+    \text{p.p.:}& i[0] \geq 0 & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[1] \geq 0 & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[0] i[2] \leq z & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[1] i[2] \leq z & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[0] + i[2] \leq j[0] + M * a[i,j]& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & j[0] + j[2] \leq i[0] + M * a[j,i]& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & i[1] + i[2] \leq j[1] + M * b[i,j]& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & j[1] + j[2] \leq i[1] + M * b[j,i]& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & a[i, j] + a[j, i] + b[i, j] + b[j, i] \leq 3& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & a[i,j] \in \{0,1\} & , &\text{za $i \neq j $ v $kvadrati$} \\
+                & b[i,j] \in \{0,1\} & , &\text{za $i \neq j $ v $kvadrati$} \\
+    \end{array}
+    \end{equation*}
+
+Pripomnimo nekaj stvari za pojasnilo:
+\begin{enumerate}\label{opombice}
+    \item  $i[0]$ je $x-koordinata$ ,$i[1]$ je $y-koordinata$ in $i[2]$ je $dolzina_daljice$ od kvadrata $i$
+    \item $a[i,j]$ je spremenljivka, ki pokaže 1, če kvadrat $i$ NI levo od $j$ in 0 sicer
+    \item $b[i,j]$ je spremenljivka, ki pokaže 1, če kvadrat $i$ NI spodaj od $j$ in 0 sicer
+    \item $M$ je zgornja meja, s katero si pomagamo, da je le nekaj pogojev res. Za njo lahko vzamemo $\displaystyle\sum\limits_{\text{$i$ v }kvadrati}i[2]$
+\end{enumerate}
+
+
+
+\subsection{Potek reševanja}\label{osnovna koda}
 Za podatke imava podane kvadrate s stranicami dolžine $i$, kjer $i = 1, \dots , n$, in $ i \in \Z, n \in \N$.
 Ciljna funkcija najinega problema je iskanje $\min z$, kjer je $z$ dolžina stranice največjega kvadrata, v katerega
 se zloži vse manjše kvadrate s stranicami $i = 1, \dots , n$.\\
-Za reševanje problema sva definirala razred Kvadrat.
+Za reševanje problema sva definirala razred $Kvadrat$.
 \begin{verbatim}
 from sage.plot.polygon import polygon
 class Kvadrat:
@@ -203,18 +238,59 @@ V nadeljevanju bova problem tudi reševala v primeru,
 stranice vzamemo dva/tri/štiri \dots take kvadrate. 
 Obravnavala bova tudi primer, ko je lahko ena točka v ravnini (velikem kvadratu) pokrita z 
 dvema/tremi/štirimi \dots  kvadrati.
+\subsection{Zapis problema kot CLP, ko imamo kvadrate ne nujno zaporednih velikost}
+CLP v tem problemu izgleda identičen tistemu v osnovnem primeru \ref{osnovni CLP}
+
 \subsection{Potek reševanja, ko imamo kvadrate ne nujno zaporednih velikost}
-Dani podatki, ki jih sedaj ponudimo je seznam dolžin daljic kvadrat. V tem primeru ni 
+Dani podatki, ki jih sedaj ponudimo je seznam dolžin daljic kvadratov. V tem primeru ni 
 pomembno, koliko je katerih dolžin, važno je le, da je seznam urejen. To je tako,
 da so dolžine stranic naraščujoče.
-V tem primeru, nam funkcija packing(), na danem seznamu deluje pravilno in nam najde rešitev.
-Nisva se ubadala s pisanjem funkcije, ki bi generirala seznam , ki bi imel števila od 
+V tem primeru, nam funkcija $packing()$ kot pri osnovnem primeru v\ref{osnovna koda}, na danem seznamu deluje pravilno in nam najde rešitev.
+Nisva se ubadala s pisanjem funkcije, ki bi generirala seznam, ki bi imel števila od 
 $1$ do $n$ in vsako $l$-krat. To lahko bralec naredi sam brez večjih težav in preveri, da 
 stvar deluje.
-SLIKA TODO
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{Vec_istih_kvadratov.png}
+    \caption{Primer za pet kvadratov dolžine $1$ in dva dolžine $2$}
+\end{figure}
+
+\subsection{Zapis problema kot CLP, ko je vsaka točka v prostoru lahko pokrita $k$-krat}
+Za podatke imamo seznam kvadratov in število $k$. Vsak kvadrat $i$ v seznamu $kvadrati$ je sestavljen
+iz trojice $(x-koordinata,y-koordinata,dolzina_daljice)$, kjer imamo spremenljivko $dolžina daljice$
+poznano, spremenljivki $x-koordinata,y-koordinata$ pa ne. Število $k$ nam pove, kolikokrat je
+lahko ena točka v prostoru pokrita, tj. v koliko kvadratih je lahko.
+
+\begin{equation*}
+    \begin{array}{ll@{}ll}
+    \text{minimize}  & z &\\
+    \text{p.p.:}& i[0] \geq 0 & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[1] \geq 0 & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[0] i[2] \leq z & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[1] i[2] \leq z & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[0] + i[2] \leq j[0] + M * a[i,j]& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & j[0] + j[2] \leq i[0] + M * a[j,i]& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & i[1] + i[2] \leq j[1] + M * b[i,j]& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & j[1] + j[2] \leq i[1] + M * b[j,i]& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & a[i, j] + a[j, i] + b[i, j] + b[j, i] \leq 3 + L[i,j]& , &\text{za $i \neq j $ v $kvadrati$} \\
+                & \displaystyle\sum_{\substack{g \in {1,\dots , k+1}\\ f \ge g, g\in {1, \dots k+1}}} L[i_g,i_f] \leq {k+1 \choose 2} -1& , &\text{za $i_1 \neq i_2\neq \dots \neq i_{k+1} $ v $kvadrati$} \\ 
+                & a[i,j] \in \{0,1\} & , &\text{za $i \neq j $ v $kvadrati$} \\
+                & b[i,j] \in \{0,1\} & , &\text{za $i \neq j $ v $kvadrati$} \\
+                & L[i,j] \in \{0,1\} & , &\text{za $i \neq j $ v $kvadrati$}
+    \end{array}
+    \end{equation*}
+
+Večino pripomb, ki so tu potrebne, smo že pojasnili pri osnovnem primeru \ref{opombice}. Dodati je treba samo še eno:
+\begin{enumerate}
+    \item Če $L[i,j] = 1$, pomeni da se kvadrata i in j sekata. Pogoj z vsoto pa nam zagotovi da se nam ne seka preveč kvadratov. 
+    Če izberemo $k+1$ kvadrat in je vsota enaka ${k+1 \choose 2}$, tedaj se vsaka dva kvadrata iz izbranih $k+1$ kvadratov sekata.
+    Torej obstaja točka ki je v vseh teh kvadratih in torej ne zadošča pogoju.
+\end{enumerate}    
+
 \subsection{Potek reševanja, ko je vsaka točka v prostoru lahko pokrita $k$-krat}
 Podatki, ki jih v tem primeru dobimo je število $k$,  ki pove kolikokrat je 
-lahko ena točka v prostoru pokrita in urejen seznam dolžin stranic.
+lahko ena točka v prostoru pokrita in urejen seznam dolžin stranic kvadratov.
 Za ta primer sva definirala naslednjo funkcijo, ki izračuna željen razultat:
 
 \begin{verbatim}
@@ -248,6 +324,25 @@ Za ta primer sva definirala naslednjo funkcijo, ki izračuna željen razultat:
     return (z, [(xx[i], yy[i], d) for i, d in enumerate(kvadrati)]) 
 \end{verbatim}
 
-SLIKE TODO
+\begin{figure}[H]
+    \centering
+    \includegraphics{Dvakratno_prekrivanje.png}
+    \caption{Primer, ko je vsaka točka lahko pokrita $2-krat$}
+\end{figure}
+
+\noindent Tak problem program reši bistveno hitreje, saj ima več možnosti za ureditev kvadratov. Večkrat,
+ko je vsaka točka lahko pokrita enostavnejši postane izračun rezultata, saj si lahko predstavljamo problem,
+da vsak kvadrat razdelimo na svoj podproblem in ga rešujemo kot osnovni problem z malo več svobode pri
+omejevanju mej.
+
+\section{Sklep}
+Problem je težek, saj ne obstaja enolična rešitev. Program ima na voljo veliko možnosti za rešitve, hkrati
+pa mora biti problem dobro zastavljen, da program dobi pravilno rešitev. Za izračun si moramo postaviti tesne
+meje, ki omejujejo dopustne rešitve za hitrost delovanja programa.\\
+V nadgradnji problema opazimo veliko hitrejše delovanje programa. Zahteve niso tako omejujoče s prekrivanjem 
+ali pa z velikostjo kvadratov. Pri večkratnem prekrivanju se problem za program zelo poenostavi, kar močno
+vpliva na hitrost.\\
+Pri zlaganju kvadratov v kvadrat opazimo veliko nepokritih točk, kar nam poda idejo, da bi bilo bolj
+učinkovito zlagati kvadrate v pravokotnik.
 
 \end{document}
