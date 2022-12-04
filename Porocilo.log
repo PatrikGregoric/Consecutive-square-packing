@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.26)  2 DEC 2022 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.26)  4 DEC 2022 13:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -216,7 +216,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `Porocilo.toc'.
 
  [2]
-<./slike//prvi.png, id=13, 277.5168pt x 281.1303pt>
+<./slike//prvi.png, id=14, 277.5168pt x 281.1303pt>
 File: ./slike//prvi.png Graphic file (type png)
 <use ./slike//prvi.png>
 Package pdftex.def Info: ./slike//prvi.png  used on input line 102.
@@ -236,6 +236,11 @@ Overfull \hbox (81.35294pt too wide) in paragraph at lines 131--131
  []
 
 [4]
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 164--164
+[]    \T1/cmtt/m/n/10.95 p.add_constraint((p['z']) >= ((max(kvadrati))+kvadrati[len(kvadrati)-2]))[] 
+ []
+
+
 Overfull \hbox (53.06108pt too wide) in paragraph at lines 165--165
 []    \T1/cmtt/m/n/10.95 for i, d in enumerate(kvadrati): # i je indeks, d je dolºina stranice[] 
  []
@@ -285,19 +290,79 @@ File: ./slike//Lahek_primer.png Graphic file (type png)
 <use ./slike//Lahek_primer.png>
 Package pdftex.def Info: ./slike//Lahek_primer.png  used on input line 193.
 (pdftex.def)             Requested size: 283.2977pt x 281.12961pt.
-[5] [6 <./slike//Lahek_primer.png>] (Porocilo.aux) ) 
+[5] [6 <./slike//Lahek_primer.png>]
+Overfull \hbox (375.58823pt too wide) in paragraph at lines 221--221
+[]    \T1/cmtt/m/n/10.95 def packing_ktimes(kvadrati,k): #kvadrati je seznam cifer, tale dela £e so cifre urejene in vsako to£ko lahko pokrijemo k-krat[] 
+ []
+
+
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 222--222
+[]    \T1/cmtt/m/n/10.95 p = MixedIntegerLinearProgram(maximization=False,solver='GLPK')[] 
+ []
+
+
+Overfull \hbox (53.06108pt too wide) in paragraph at lines 231--231
+[]    \T1/cmtt/m/n/10.95 for i, d in enumerate(kvadrati): # i je indeks, d je dolºina stranice[] 
+ []
+
+
+Overfull \hbox (24.76923pt too wide) in paragraph at lines 232--232
+[]        \T1/cmtt/m/n/10.95 p.add_constraint(x[i] >= 0)  # ºelimo nenegativne koordinate[] 
+ []
+
+
+Overfull \hbox (154.91176pt too wide) in paragraph at lines 234--234
+[]        \T1/cmtt/m/n/10.95 p.add_constraint(x[i] + d <= p['z']) # omejimo p['z'] z najve£jo pokrito koordinato[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 237--237
+[]            \T1/cmtt/m/n/10.95 p.add_constraint(x[i] + d <= x[j] + zg_meja * a[i,j])[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 238--238
+[]            \T1/cmtt/m/n/10.95 p.add_constraint(x[j] + g <= x[i] + zg_meja * a[j,i])[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 239--239
+[]            \T1/cmtt/m/n/10.95 p.add_constraint(y[i] + d <= y[j] + zg_meja * b[i,j])[] 
+ []
+
+
+Overfull \hbox (7.79411pt too wide) in paragraph at lines 240--240
+[]            \T1/cmtt/m/n/10.95 p.add_constraint(y[j] + g <= y[i] + zg_meja * b[j,i])[] 
+ []
+
+
+Overfull \hbox (75.69456pt too wide) in paragraph at lines 242--242
+[]        \T1/cmtt/m/n/10.95 p.add_constraint(a[i, j] + a[j, i] + b[i, j] + b[j, i] <= 3 + L[i,j])[] 
+ []
+
+
+Overfull \hbox (279.39592pt too wide) in paragraph at lines 244--244
+[]        \T1/cmtt/m/n/10.95 p.add_constraint(sum(sum(L[C[i],C[j]] for j in range(i+1,k+1)) for i in range(k +1 )) <= comb((k+1),2)-1)[] 
+ []
+
+
+Overfull \hbox (19.11086pt too wide) in paragraph at lines 248--248
+[]    \T1/cmtt/m/n/10.95 return (z, [(xx[i], yy[i], d) for i, d in enumerate(kvadrati)])[] 
+ []
+
+[7] (Porocilo.aux) ) 
 Here is how much of TeX's memory you used:
- 4285 strings out of 478582
- 66867 string characters out of 2844344
+ 4293 strings out of 478582
+ 66961 string characters out of 2844344
  373709 words of memory out of 3000000
- 22412 multiletter control sequences out of 15000+600000
- 478962 words of font info for 54 fonts, out of 8000000 for 9000
+ 22418 multiletter control sequences out of 15000+600000
+ 480507 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,6n,62p,310b,276s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Porocilo.pdf (6 pages, 136049 bytes).
+ <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\patri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Porocilo.pdf (7 pages, 150580 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
+ 324 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

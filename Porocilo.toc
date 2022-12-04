@@ -7,3 +7,5 @@
 \contentsline {subsection}{\numberline {2.2}Potek reševanja}{4}{}%
 \contentsline {section}{\numberline {3}Nadgradnja problema}{6}{}%
 \contentsline {subsection}{\numberline {3.1}Opis nadgradnje}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Potek reševanja, ko imamo kvadrate ne nujno zaporednih velikost}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Potek reševanja, ko je vsaka točka v prostoru lahko pokrita $k$-krat}{7}{}%
