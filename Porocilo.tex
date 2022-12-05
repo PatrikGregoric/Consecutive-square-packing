@@ -116,7 +116,7 @@ To je: uvedla bova spremenljivke, zapisala omejitve in to poslala skozi vgrajene
 metode za reševanje CLP v programskem jeziku Sage.
 \subsection{Zapis problema kot CLP}\label{osnovni CLP}
 Za podatke imamo seznam kvadratov. Vsak kvadrat $i$ v seznamu $kvadrati$ je sestavljen
-iz trojice $(x-koordinata,y-koordinata,dolzina_daljice)$, kjer imamo spremenljivko $dolžina daljice$
+iz trojice $(x-koordinata,y-koordinata,dolzina\_daljice)$, kjer imamo spremenljivko $dolzina\_daljice$
 poznano, spremenljivki $x-koordinata,y-koordinata$ pa ne.
 
  \begin{equation*}
@@ -138,7 +138,7 @@ poznano, spremenljivki $x-koordinata,y-koordinata$ pa ne.
 
 Pripomnimo nekaj stvari za pojasnilo:
 \begin{enumerate}\label{opombice}
-    \item  $i[0]$ je $x-koordinata$ ,$i[1]$ je $y-koordinata$ in $i[2]$ je $dolzina_daljice$ od kvadrata $i$
+    \item  $i[0]$ je $x-koordinata$ ,$i[1]$ je $y-koordinata$ in $i[2]$ je $dolzina\_daljice$ od kvadrata $i$
     \item $a[i,j]$ je spremenljivka, ki pokaže 1, če kvadrat $i$ NI levo od $j$ in 0 sicer
     \item $b[i,j]$ je spremenljivka, ki pokaže 1, če kvadrat $i$ NI spodaj od $j$ in 0 sicer
     \item $M$ je zgornja meja, s katero si pomagamo, da je le nekaj pogojev res. Za njo lahko vzamemo $\displaystyle\sum\limits_{\text{$i$ v }kvadrati}i[2]$
@@ -245,7 +245,7 @@ CLP v tem problemu izgleda identičen tistemu v osnovnem primeru \ref{osnovni CL
 Dani podatki, ki jih sedaj ponudimo je seznam dolžin daljic kvadratov. V tem primeru ni 
 pomembno, koliko je katerih dolžin, važno je le, da je seznam urejen. To je tako,
 da so dolžine stranic naraščujoče.
-V tem primeru, nam funkcija $packing()$ kot pri osnovnem primeru v\ref{osnovna koda}, na danem seznamu deluje pravilno in nam najde rešitev.
+V tem primeru, nam funkcija \verb|packing()| kot pri osnovnem primeru v \ref{osnovna koda}, na danem seznamu deluje pravilno in nam najde rešitev.
 Nisva se ubadala s pisanjem funkcije, ki bi generirala seznam, ki bi imel števila od 
 $1$ do $n$ in vsako $l$-krat. To lahko bralec naredi sam brez večjih težav in preveri, da 
 stvar deluje.
@@ -258,7 +258,7 @@ stvar deluje.
 
 \subsection{Zapis problema kot CLP, ko je vsaka točka v prostoru lahko pokrita $k$-krat}
 Za podatke imamo seznam kvadratov in število $k$. Vsak kvadrat $i$ v seznamu $kvadrati$ je sestavljen
-iz trojice $(x-koordinata,y-koordinata,dolzina_daljice)$, kjer imamo spremenljivko $dolžina daljice$
+iz trojice $(x-koordinata,y-koordinata,dolzina\_daljice)$, kjer imamo spremenljivko $dolzina\_daljice$
 poznano, spremenljivki $x-koordinata,y-koordinata$ pa ne. Število $k$ nam pove, kolikokrat je
 lahko ena točka v prostoru pokrita, tj. v koliko kvadratih je lahko.
 
@@ -267,8 +267,8 @@ lahko ena točka v prostoru pokrita, tj. v koliko kvadratih je lahko.
     \text{minimize}  & z &\\
     \text{p.p.:}& i[0] \geq 0 & ,  & \text{za $i$ v $kvadrati$}\\
                 & i[1] \geq 0 & ,  & \text{za $i$ v $kvadrati$}\\
-                & i[0] i[2] \leq z & ,  & \text{za $i$ v $kvadrati$}\\
-                & i[1] i[2] \leq z & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[0] +i[2] \leq z & ,  & \text{za $i$ v $kvadrati$}\\
+                & i[1]  + i[2] \leq z & ,  & \text{za $i$ v $kvadrati$}\\
                 & i[0] + i[2] \leq j[0] + M * a[i,j]& , &\text{za $i \neq j $ v $kvadrati$} \\
                 & j[0] + j[2] \leq i[0] + M * a[j,i]& , &\text{za $i \neq j $ v $kvadrati$} \\
                 & i[1] + i[2] \leq j[1] + M * b[i,j]& , &\text{za $i \neq j $ v $kvadrati$} \\
