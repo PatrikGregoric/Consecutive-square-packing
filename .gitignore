@@ -14,18 +14,18 @@ opis/
 .fdb_latexmk
 .synctex.gz
 
-Porocilo/
-.aux
-.lof
-.log
-.lot
-.fls
-.out
-.toc
-.fmt
-.fot
-.cb
-.cb2
-.fdb_latexmk
-.synctex.gz
+
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.fdb_latexmk
+*.synctex.gz
 
